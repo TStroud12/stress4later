@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newspaper Landing Page</title>
+    <link rel="stylesheet" href="CSS File/Images/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Wax & Ink</h1>
+    </header>
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" href="#home">Home</a>
+        <a href="article.html" href="#Articles">Articles</a>
+        <a href="gallery.html" href="#gallery">Gallery</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+          var x = document.getElementById("myTopnav");
+          if (x.classList === "topnav") {
+            x.classList += " responsive";
+          } else {
+            x.class = "topnav";
+          }
+        }
+    </script>
+
+    <main class="landing-articles">
+        <section class="featured-article">
+            <h2>Featured Article</h2>
+            <h3>Exploring the Timeless Greatness of J.R.R. Tolkien</h3>
+            <div class="featured-photo"><img id="image4" src="Images/Tolkien.jpg" alt="J.R.R Tolkien"></div>
+            
+            <p>A Literary Legacy Like No Other.</p>
+            <p>
+                In the vast landscape of literature, there are few names that evoke as much reverence and admiration as that of J.R.R. Tolkien. Renowned for his groundbreaking works such as "The Hobbit" and "The Lord of the Rings" trilogy, Tolkien's impact on the world of fantasy literature is immeasurable. But what is it about Tolkien that continues to captivate readers across generations? What makes him great?
+                At the heart of Tolkien's greatness lies his unparalleled ability to craft intricate and immersive worlds. From the lush landscapes of the Shire to the towering peaks of Mordor, Tolkien's Middle-earth is a testament to his extraordinary imagination. Every corner of this fantastical realm is richly detailed, with its own history, culture, and languages. Tolkien's dedication to worldbuilding sets him apart as a visionary creator...</p>
+        </section>
+        <section class="latest-news">
+            <h2>Latest News</h2>
+            <h3>You Should Watch Hazbin Hotel and Here's Why</h3>
+            <div class="Latest-photo"><img id="image5" src="Images/HH.jpg" alt="Hazbin HotelPoster"></div>
+            <p>Hazbin Hotel, an animated series created by Vivienne Medrano, has garnered immense attention and acclaim since its debut. Despite its unconventional premise, the show has captured the hearts of viewers worldwide. Here are several reasons why Hazbin Hotel stands out as a truly remarkable creation.
+
+                Innovative Concept: Hazbin Hotel presents a refreshingly original concept, portraying the afterlife as a chaotic realm where sinners seek redemption. This innovative approach to storytelling immediately sets it apart from conventional narratives, offering a unique blend of dark humor, fantasy, and redemption arcs.
+                
+                Vibrant and Diverse Characters: One of the show's greatest strengths lies in its vibrant cast of characters, each with their own quirks, flaws, and captivating backstories. From the charismatic and devilishly charming Charlie to the enigmatic and mischievous Alastor, every character adds depth and intrigue to the narrative... </p>
+            <!--Latest news goes here-->
+        </section>
+    </main>
+    
+    <footer>
+        <p>Contact us at WhereAmI@gmail.com</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Page</title>
+    <link rel="stylesheet" href="CSS File/Images/style.css">
+</head>
+<body>
+    <header>
+        <h1>Wax & Ink</h1>
+    </header>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" href="#home">Home</a>
+        <a href="article.html" href="#Articles">Articles</a>
+        <a href="gallery.html" href="#gallery">Gallery</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+          var x = document.getElementById("myTopnav");
+          if (x.classList === "topnav") {
+            x.classList += " responsive";
+          } else {
+            x.class = "topnav";
+          }
+        }
+    </script>
+
+
+    <main class="article-content">
+        <section class="first-article">
+            <h2>HadesTown: A Musical Journey into Mythological Majesty</h2>
+            <h3>Way Down, HadesTown, Way Down Under The Ground...</h3>
+            <div class="first-art-photo"><img id="image6" src="Images/WayDown.jpg" alt="Photo of a scene from Hadestown"></div>
+
+            <p>HadesTown, a musical masterpiece crafted by Anais Mitchell, has transcended the boundaries
+                     of traditional theater to become a cultural phenomenon. Set in a post-apocalyptic world inspired by Greek mythology, 
+                    the production takes audiences on a captivating journey filled with heart, soul, and timeless themes. Here's why HadesTown 
+                    stands as a beacon of theatrical brilliance:</p>
+                <p> At its core, HadesTown reimagines the ancient Greek myth of Orpheus and Eurydice, infusing it with modern sensibilities 
+                    and poignant commentary on love, sacrifice, and the human condition. Through its innovative narrative structure and evocative 
+                    storytelling, the musical breathes new life into age-old tales, inviting audiences to rediscover the magic of mythology.</p>
+            <!--Add Imeges or other media content as needed-->
+        </section>
+        <section class="second-article">
+            <h2>Ride The Cyclone: A Theatrical Rollercoaster</h2>
+            <h3>Happy Birthday! Everyone is dead...</h3>
+            <div class="second-art-photo"><img id="image7" src="Images/Noel's Lament.jpg" alt="Photo of the climax of Noel's Lament"></div>
+            <p>Ride The Cyclone, a musical by Jacob Richmond and Brooke Maxwell, has left audiences exhilarated and enthralled with its unique 
+                blend of dark humor, heart-wrenching drama, and electrifying performances. As a theatrical experience like no other, Ride The Cyclone 
+                has captivated theatergoers worldwide. Here's why this unconventional gem stands out as a true masterpiece:</p>
+                <p>The musical score of Ride The Cyclone is as eclectic and eccentric as its characters, blending elements of pop, rock,
+                     cabaret, and musical theater. Composed by Brooke Maxwell, the music ranges from haunting ballads to upbeat anthems,
+                      with lyrics that are both witty and poignant. Each song serves as a window into the innermost thoughts and emotions 
+                      of the characters, creating a deeply immersive and emotionally resonant experience for audience...</p>
+            <!--Add Imeges or other media content as needed-->
+        </section>
+
+        <!--Additional sections added as needed-->
+    
+    </main>
+    <aside class="sidebar">
+        <section class="advertisement">
+            <h4>Have You Ever Considered meeting God?</h4>
+            <p>That's the Ad</p>
+        </section>
+    </aside>
+
+</body>
+</html>

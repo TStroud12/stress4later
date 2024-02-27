@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="CSS File/Images/style.css">
+</head>
+<body>
+    <header>
+        <h1>Wax & Ink</h1>
+    </header>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" href="#home">Home</a>
+        <a href="article.html" href="#Articles">Articles</a>
+        <a href="gallery.html" href="#gallery">Gallery</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+          var x = document.getElementById("myTopnav");
+          if (x.classList === "topnav") {
+            x.classList += " responsive";
+          } else {
+            x.class = "topnav";
+          }
+        }
+    </script>
+ <main class="photo-gallery">
+    <div class="photo"><img id="image1" src="Images/Tolkien.jpg" alt="Tolkien"></div>
+    <div class="photo"><img id="image2" src="Images/HH.jpg" alt="Hazbin Hotel"></div>
+    <div class="photo"><img id="image8" src="Images/WayDown.jpg" alt="HadesTown"></div>
+    <div class="photo"><img id="image9" src="Images/Noel's Lament.jpg" alt="Ride The Cyclone"></div>
+</main>
+<div class="gallery-controls">
+    <button id="prev">Previous</button>
+    <button id="next">Next</button>
+</div>
+<script>
+    document.getElementById('prev').addEventListener('click', function() {
+        changeImage(-1);
+    });
+
+    document.getElementById('next').addEventListener('click', function() {
+        changeImage(1);
+    });
+
+    let currentIndex = 0;
+
+    function changeImage(offset) {
+        const images = document.querySelectorAll('.photo img');
+        currentIndex = (currentIndex + offset + images.length) % images.length;
+        images.forEach((image, index) => {
+            if (index === currentIndex) {
+                image.style.display = 'block';
+            } else {
+                image.style.display = 'none';
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
